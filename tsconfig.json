@@ -1,17 +1,11 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es2020",
-        "jsx": "preserve",
-        "strictFunctionTypes": true,
-        "declaration": true,
-        "outDir": "./lib",
-        "strict": true
+      "target": "es5",
+      "module": "commonjs",
+      "declaration": true,
+      "outDir": "./lib",
+      "strict": true
     },
-    "exclude": [
-        "node_modules",
-        "**/node_modules/*"
-    ],
     "include": ["src"],
-
-}
+    "exclude": ["node_modules", "**/__tests__/*"]
+  }
