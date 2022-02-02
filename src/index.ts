@@ -3,7 +3,7 @@ export class DurationLogger {
   index: number;
   durationWarningTresholdInMs: number;
   _warningTxt = "!!!!!!!!!!!!!!!";
-  _defaultDurationWarningTresholdInMs = 1;
+  _defaultDurationWarningTresholdInMs = 100;
   mainId: string | undefined;
   logTotalTime: boolean;
   startTime: number;
@@ -14,7 +14,7 @@ export class DurationLogger {
     logTotalTime?: boolean
   ) {
     console.log(
-      `Perfomance monitor started ${mainId ? "for " + mainId : undefined}`
+      `DurationLogger started ${mainId ? "for " + mainId : undefined}`
     );
     this.mainId = mainId;
     this.prevTime = this.now();
